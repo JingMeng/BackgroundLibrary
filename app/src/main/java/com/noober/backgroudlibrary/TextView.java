@@ -1,7 +1,7 @@
-package com.noober.backgroudlibrary;
+﻿package com.noober.backgroudlibrary;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -21,3 +21,4 @@ public class TextView extends View {
         super(context, attrs, defStyleAttr);
     }
 }
+

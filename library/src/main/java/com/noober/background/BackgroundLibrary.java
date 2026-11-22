@@ -2,8 +2,8 @@ package com.noober.background;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +34,7 @@ public class BackgroundLibrary {
 
     /**
      * used for activity which has addFactory
-     * 如果因为其他库已经设置了factory，可以使用该方法去进行inject，在其他库的setFactory后面调用即可
+     * 濡傛灉鍥犱负鍏朵粬搴撳凡缁忚缃簡factory锛屽彲浠ヤ娇鐢ㄨ鏂规硶鍘昏繘琛宨nject锛屽湪鍏朵粬搴撶殑setFactory鍚庨潰璋冪敤鍗冲彲
      * @param context
      */
     public static void inject2(Context context) {
@@ -66,3 +66,4 @@ public class BackgroundLibrary {
         }
     }
 }
+

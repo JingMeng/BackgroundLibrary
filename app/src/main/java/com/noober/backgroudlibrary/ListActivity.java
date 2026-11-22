@@ -1,6 +1,6 @@
-package com.noober.backgroudlibrary;
+﻿package com.noober.backgroudlibrary;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -21,8 +21,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        //不需要任何特殊处理
-        ListView listView = findViewById(R.id.listView);
+        //涓嶉渶瑕佷换浣曠壒娈婂鐞?        ListView listView = findViewById(R.id.listView);
         for (int i = 0; i < 20; i++) {
             data.add(new HashMap<String, Object>());
         }
@@ -30,8 +29,9 @@ public class ListActivity extends AppCompatActivity {
                 this,
                 data,
                 R.layout.item,
-                new String[]{},// 与下面数组元素要一一对应
+                new String[]{},// 涓庝笅闈㈡暟缁勫厓绱犺涓€涓€瀵瑰簲
                 new int[]{});
         listView.setAdapter(simAdapt);
     }
 }
+
